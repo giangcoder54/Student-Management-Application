@@ -1,38 +1,141 @@
-.App {
+*,*::after,*::before{
+  margin: 0;
+  box-sizing: border-box;
+}
+:root{
+  --dark-blue: #1b1b32;
+}
+.body{
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue-alpha);
+  background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.text-center{
   text-align: center;
 }
+.container{
+  margin-top: 100px;
+  font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #fff;
+  
+    width: 100%;
+   
+} 
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.table{
+  width: 80%;
+  background: #1b1b32;
+  margin: 0 auto;
+    border-radius: 12px;
+    position: relative;
+}
+.row{
+  border: 1px solid;
+  text-align: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.col-6{
+  width: 16.6667%;
+  padding: 16px;
+}
+.title{
+  display: inline-block;
+    padding: 10px 24px;
+    font-size: 20px;
+}
+.title-col{
+  font-size: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.adding{
+ background-color: var(--dark-blue);
+ color:#fff;
+ padding: 8px;
+ border-radius: 4px;
+ text-decoration: none;
+ position: absolute;
+    right: 10%;
+    top: 56px;
+
+}
+/* css footer and header */
+
+.header{
+  height: 46.5px;
+  position: absolute;
+  top: 0;
+  background-color:var(--dark-blue);
+  color: #fff;
+  width: 100%;
+}
+/* add css */
+
+form{   
+    
+  max-width: 720px;
+   min-width: 300px;
+   margin: 0 auto;
+   border-radius: 0.25rem;
+   background-color: var(--dark-blue);
+   padding: 2.5rem ;
+   display: block;
+   color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+label{
+   display: flex;
+   align-items: center;
+   font-size: 1.125rem;
+   margin-bottom: 0.5rem;
 }
+.form-group{
+   margin: 0 auto 1.25rem auto;
+   padding: 0.25rem;
+}
+div{
+   display: block;
+}
+.form-control{
+   width: 100%;
+   padding: 6px 12px;
+   border-radius: 0.25rem;
+   border: 1px solid #ced4da;
+}
+input {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+.submit-form{
+  float:right;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.button{
+  padding: 8px;
+  margin: 0 4px;
+
+}
+.cancel{
+  text-decoration: none;
+}
+.button:hover{
+  background-color: blue;
+}
+.update{
+  text-decoration: none;
+  color: #1b1b32;
 }
